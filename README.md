@@ -5,7 +5,7 @@ to the given user's input(s) and then writes the updated text to a new file in t
 
 ### BEFORE TEMPLATE
 
-![Image of faketemp.txt](https://github.com/AugdenES/Template-Inputter/blob/master/faketemp.txt?raw=true))
+![Image of faketemp.txt](https://github.com/AugdenES/Template-Inputter/blob/master/faketemp.txt?raw=true)
 
 ### AFTER TEMPLATE (NEW FILE)
-![Image of newEmail.txt](https://github.com/AugdenES/Template-Inputter/blob/master/newEmail.txt?raw=true))
+![Image of newEmail.txt](https://github.com/AugdenES/Template-Inputter/blob/master/newEmail.txt?raw=true)
