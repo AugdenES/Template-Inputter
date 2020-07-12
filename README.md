@@ -1,8 +1,8 @@
-## Template Inputter ##
+# Template Inputter 
 This program looks for flags indicating the names or variables you want changed in your template file.
 Specifically, it parses your template file's text, finds your flagged words, maps the flagged words 
 to the given user's input(s) and then writes the updated text to a new file in the same directory. 
 
-# BEFORE TEMPLATE #
+# BEFORE TEMPLATE 
 
-# AFTER TEMPLATE (NEW FILE) #
+# AFTER TEMPLATE (NEW FILE) 
