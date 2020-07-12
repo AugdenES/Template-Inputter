@@ -3,6 +3,11 @@ This program looks for flags indicating the names or variables you want changed 
 Specifically, it parses your template file's text, finds your flagged words, maps the flagged words 
 to the given user's input(s) and then writes the updated text to a new file in the same directory. 
 
-# BEFORE TEMPLATE 
+### BEFORE TEMPLATE
 
-# AFTER TEMPLATE (NEW FILE) 
+![Image of faketemp.txt]
+(https://github.com/AugdenES/Template-Inputter/blob/master/faketemp.txt)
+
+### AFTER TEMPLATE (NEW FILE)
+![Image of newEmail]
+(https://github.com/AugdenES/Template-Inputter/blob/master/newEmail.txt)
