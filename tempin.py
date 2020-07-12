@@ -8,9 +8,7 @@ parser = argparse.ArgumentParser(prog= "tempin', description='Enter path to temp
 parser.add_argument("path", help="enter the path to template file")
 parser.add_argument("-s", "--save", help="save template path to specified name")
 args = parser.parse_args()
-print(args.path,type(args.path))
 temp = os.path.basename(args.path)
-print(temp)
 
 entriesData = [] # Array which holds flagged entry words of interest, without flags or unwanted text)
 
@@ -29,17 +27,17 @@ if os.path.isfile(args.path):
             print("Reading from "+temp+":") # Show users the program process for visualization 
             
             templateText = template.read() # Read the template file to later display to the user
+
+            template.seek(0) # Reset pointer to beginning of file
+
+            templateLines = template.readlines() # Read and obtain the list of lines from the file
                 
             print("***************************\n")
             print("** Read  **")
             print(templateText+'\n')
 
-            flag = input("What is your input flag? (e.g. '_~COMPANY_~' -> flag = '_~'): ")
 
-            template.seek(0) # Reset pointer to beginning of file
-
-            templateLines = template.readlines() # Read and obtain the list of lines from the file
-
+        flag = input("What is your input flag? (e.g. '~COMPANY~' -> flag = '~'): ")
 
         lineStringLengths = [] # Create array of string lengths of each line in tempateLines
 
@@ -69,7 +67,7 @@ if os.path.isfile(args.path):
                     updatedWord = input(flaggedWord + "? ") # Obtain desired name or variable input from the user
                     entriesDataDict[replaceWord] = updatedWord # Save user input to dictionary
 
-                templateFlagParser(line[(secondFlag + len(flag)):])
+                templateFlagParser(line[(secondFlag + len(flag)):]) # Recursively call function to line immediateling following current replaceWord
 
             else:
                 numFlags.append(flagCount)
@@ -77,7 +75,7 @@ if os.path.isfile(args.path):
 
                             
         ##
-        ## PARSE templateText to fill in each replaceWord with given user's input
+        ### PARSE templateText to fill in each replaceWord with given user's input
         ##
 
         for tLine in templateLines:       
@@ -88,40 +86,15 @@ if os.path.isfile(args.path):
         for key in entriesDataDict.keys():
             if key in templateText:
                 templateText = templateText.replace(key, entriesDataDict[key])
-
-        ##
-        ## FORMAT the updated templateText based on line lengths of original templateText
-        ##
-
-
-        print(lineStringLengths) # Check length of each line
-
-        print(entriesDataDict) # Check user input correctly mapped to replaced words
-
-        print(numFlags)
-
-        print("Updated templateText:\n\n"+templateText)
-
+  
         ##
         ### WRITE new file from user inputs for their template
         ##
 
         newFileName = input("What would you like to name your new template file? ")
                       
-        with open(newFileName+".txt", "w+") as newFile:
+        with open(newFileName+".txt", "w") as newFile:
             newFile.write(templateText)
-
-            print("reading "+newFileName+"\n")
-            print(newFile.read())
-        
-    else:
-        print("TODO: Other file extensions ")
-
-        print("\nERROR: File type is not supported.") 
 
 else:
     print('\nERROR: File does not exist')
-
-    #if os.path.sep == '/':
-    #   bytepath = bytearray(args.path, 'utf-8')
-    #   print(bytepath, type(bytepath))
