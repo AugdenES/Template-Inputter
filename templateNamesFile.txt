@@ -1,0 +1,2 @@
+random: /Users/Augdenshaw/Desktop/randomtemp.txt
+fundemail: /Applications/Important Material/Templates/faketemp.txt
