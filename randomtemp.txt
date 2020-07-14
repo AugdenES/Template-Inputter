@@ -1,0 +1,2 @@
+this is a random template with flagged word !RANDOM!
+more random variables: !VAR1!, !VAR2!, !VAR3!
