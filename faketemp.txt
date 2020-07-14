@@ -1,6 +1,6 @@
 
 Dear ~ADDRESSEE~,
-Thank you for your donation of ~AMOUNT~ to our local organization. Your contribution gets us one step further to
+Thank you for your donation of $~AMOUNT~ to our local organization. Your contribution gets us one step further to
 accomplishing our funding goals to make this word greener!
 
 Sincerely,
