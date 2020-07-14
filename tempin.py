@@ -2,7 +2,6 @@
 
 import argparse
 import os 
-import sys
 
 parser = argparse.ArgumentParser(prog= "tempin', description='Enter path to template file")
 parser.add_argument("path", help="enter the path to template file")
