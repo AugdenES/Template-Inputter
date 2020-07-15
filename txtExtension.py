@@ -26,6 +26,10 @@ def txtRun(path):
                 while flag not in templateText or flag == '' or flag in string.ascii_lowercase+string.ascii_uppercase:
                     flag = input("ERROR: flag cannot be found or is invalid. Please enter your flag again. ")
 
+        
+            ##
+            ### PARSE templateText to fill in each replaceWord with given user's input
+            ##
 
             lineStringLengths = [] # Create array of string lengths of each line in tempateLines
 
@@ -58,10 +62,7 @@ def txtRun(path):
                 else:
                     numFlags.append(flagCount)
                     flagCount = 0
-                           
-            ##
-            ### PARSE templateText to fill in each replaceWord with given user's input
-            ##
+
 
             for tLine in templateLines:       
                 lineStringLengths.append(len(tLine))
