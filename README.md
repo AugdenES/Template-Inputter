@@ -1,5 +1,5 @@
 # Template Inputter
-_Tempin_ is a template filler program that first asks for the path to your template file. </br>
+**Tempin** is a template filler program that first asks for the path to your template file. </br>
 This program then looks for user provided flags around their desired names and variables,</br>
 indicating the names or variables you want changed in your template file. Specifically,</br>
 it parses your template file's text, finds your flagged words, maps the flagged words </br>
