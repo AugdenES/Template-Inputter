@@ -51,7 +51,7 @@ else:
 
                 else:
                     if line == tnfLines[len(tnfLines)-1]:
-                        print("\nERROR: no such file named '" + str(args.path) + "' found" )
+                        print("\nERROR: no such file named '" + str(args.path) + "' was found" )
                     
                     
 
