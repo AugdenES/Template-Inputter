@@ -11,8 +11,8 @@ the data storage of your file paths and their given names.
 
 ### BEFORE TEMPLATE
 
-![Image of faketemp.txt](https://github.com/AugdenES/Template-Inputter/blob/master/before.png)
+![Image of faketemp.txt](https://github.com/AugdenES/Template-Inputter/blob/master/Before.png)
 
 ### AFTER TEMPLATE (NEW FILE)
 
-![Image of newEmail.txt](https://github.com/AugdenES/Template-Inputter/blob/master/after.png)
+![Image of newEmail.txt](https://github.com/AugdenES/Template-Inputter/blob/master/After.png)
